@@ -1,0 +1,915 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22460CD040D73ADBF281C25E /* Pods_CoreDataLectureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7829353A60AA7C3D4CEDB5C9 /* Pods_CoreDataLectureUITests.framework */; };
+		63E89B831C967A91CFAF542D /* Pods_CoreDataLecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8DABF09F452CF689D051BF /* Pods_CoreDataLecture.framework */; };
+		B9B31285237358A100C6EE4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B31284237358A100C6EE4A /* AppDelegate.m */; };
+		B9B3128B237358A100C6EE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B31289237358A100C6EE4A /* Main.storyboard */; };
+		B9B3128E237358A100C6EE4A /* CoreDataLecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9B3128C237358A100C6EE4A /* CoreDataLecture.xcdatamodeld */; };
+		B9B31290237358A300C6EE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B3128F237358A300C6EE4A /* Assets.xcassets */; };
+		B9B31293237358A300C6EE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B31291237358A300C6EE4A /* LaunchScreen.storyboard */; };
+		B9B31296237358A300C6EE4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B31295237358A300C6EE4A /* main.m */; };
+		B9B312A0237358A300C6EE4A /* CoreDataLectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B3129F237358A300C6EE4A /* CoreDataLectureTests.m */; };
+		B9B312AB237358A300C6EE4A /* CoreDataLectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312AA237358A300C6EE4A /* CoreDataLectureUITests.m */; };
+		B9B312D82373646100C6EE4A /* AddEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312D72373646100C6EE4A /* AddEmployeeViewController.m */; };
+		B9B312DB2373646A00C6EE4A /* EditEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312DA2373646A00C6EE4A /* EditEmployeeViewController.m */; };
+		B9B312DE2373648F00C6EE4A /* EmployeeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312DD2373648F00C6EE4A /* EmployeeListViewController.m */; };
+		B9B312E12373652E00C6EE4A /* EmployeeListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312E02373652E00C6EE4A /* EmployeeListView.m */; };
+		B9B312E32373654100C6EE4A /* EmployeeListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B312E22373654100C6EE4A /* EmployeeListView.xib */; };
+		B9B312E723736AB000C6EE4A /* EmployeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312E623736AB000C6EE4A /* EmployeeTableViewCell.m */; };
+		B9B312E923736ABC00C6EE4A /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B312E823736ABC00C6EE4A /* EmployeeTableViewCell.xib */; };
+		B9B312EE2373704B00C6EE4A /* EmployeeFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B312ED2373704B00C6EE4A /* EmployeeFormView.m */; };
+		B9B312F02373705600C6EE4A /* EmployeeFormView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9B312EF2373705600C6EE4A /* EmployeeFormView.xib */; };
+		B9BDA02D23737DD500BFFA8C /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BDA02C23737DD500BFFA8C /* Employee.m */; };
+		C5E240F995B484C287A6627F /* Pods_CoreDataLectureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2ED4E564E2A8C1BB08A342 /* Pods_CoreDataLectureTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9B3129C237358A300C6EE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B31278237358A100C6EE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B3127F237358A100C6EE4A;
+			remoteInfo = CoreDataLecture;
+		};
+		B9B312A7237358A300C6EE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B31278237358A100C6EE4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B3127F237358A100C6EE4A;
+			remoteInfo = CoreDataLecture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C2ED4E564E2A8C1BB08A342 /* Pods_CoreDataLectureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataLectureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CF084E25D71B705F701DDF /* Pods-CoreDataLecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLecture.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataLecture/Pods-CoreDataLecture.debug.xcconfig"; sourceTree = "<group>"; };
+		7829353A60AA7C3D4CEDB5C9 /* Pods_CoreDataLectureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataLectureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E1D38ECD529334787F70DE /* Pods-CoreDataLectureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLectureTests.release.xcconfig"; path = "Target Support Files/Pods-CoreDataLectureTests/Pods-CoreDataLectureTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9B31280237358A100C6EE4A /* CoreDataLecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataLecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B31283237358A100C6EE4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9B31284237358A100C6EE4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9B3128A237358A100C6EE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9B3128D237358A100C6EE4A /* CoreDataLecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataLecture.xcdatamodel; sourceTree = "<group>"; };
+		B9B3128F237358A300C6EE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B31292237358A300C6EE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9B31294237358A300C6EE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B31295237358A300C6EE4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9B3129B237358A300C6EE4A /* CoreDataLectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataLectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B3129F237358A300C6EE4A /* CoreDataLectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataLectureTests.m; sourceTree = "<group>"; };
+		B9B312A1237358A300C6EE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B312A6237358A300C6EE4A /* CoreDataLectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataLectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B312AA237358A300C6EE4A /* CoreDataLectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataLectureUITests.m; sourceTree = "<group>"; };
+		B9B312AC237358A300C6EE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B312D62373646100C6EE4A /* AddEmployeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddEmployeeViewController.h; sourceTree = "<group>"; };
+		B9B312D72373646100C6EE4A /* AddEmployeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddEmployeeViewController.m; sourceTree = "<group>"; };
+		B9B312D92373646A00C6EE4A /* EditEmployeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditEmployeeViewController.h; sourceTree = "<group>"; };
+		B9B312DA2373646A00C6EE4A /* EditEmployeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditEmployeeViewController.m; sourceTree = "<group>"; };
+		B9B312DC2373648F00C6EE4A /* EmployeeListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeListViewController.h; sourceTree = "<group>"; };
+		B9B312DD2373648F00C6EE4A /* EmployeeListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeListViewController.m; sourceTree = "<group>"; };
+		B9B312DF2373652E00C6EE4A /* EmployeeListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeListView.h; sourceTree = "<group>"; };
+		B9B312E02373652E00C6EE4A /* EmployeeListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeListView.m; sourceTree = "<group>"; };
+		B9B312E22373654100C6EE4A /* EmployeeListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListView.xib; sourceTree = "<group>"; };
+		B9B312E523736AB000C6EE4A /* EmployeeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeTableViewCell.h; sourceTree = "<group>"; };
+		B9B312E623736AB000C6EE4A /* EmployeeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeTableViewCell.m; sourceTree = "<group>"; };
+		B9B312E823736ABC00C6EE4A /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		B9B312EC2373704B00C6EE4A /* EmployeeFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmployeeFormView.h; sourceTree = "<group>"; };
+		B9B312ED2373704B00C6EE4A /* EmployeeFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmployeeFormView.m; sourceTree = "<group>"; };
+		B9B312EF2373705600C6EE4A /* EmployeeFormView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeFormView.xib; sourceTree = "<group>"; };
+		B9BDA02B23737DD500BFFA8C /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		B9BDA02C23737DD500BFFA8C /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		CD8DABF09F452CF689D051BF /* Pods_CoreDataLecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataLecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66F5B119584350C3601BDFC /* Pods-CoreDataLectureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLectureTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataLectureTests/Pods-CoreDataLectureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6381566CB417256BF75B7B /* Pods-CoreDataLecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLecture.release.xcconfig"; path = "Target Support Files/Pods-CoreDataLecture/Pods-CoreDataLecture.release.xcconfig"; sourceTree = "<group>"; };
+		EBFAD5A99BC142F0254E0165 /* Pods-CoreDataLectureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLectureUITests.release.xcconfig"; path = "Target Support Files/Pods-CoreDataLectureUITests/Pods-CoreDataLectureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F3912150F0FFA0DD06EA7A3E /* Pods-CoreDataLectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataLectureUITests.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataLectureUITests/Pods-CoreDataLectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9B3127D237358A100C6EE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E89B831C967A91CFAF542D /* Pods_CoreDataLecture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B31298237358A300C6EE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E240F995B484C287A6627F /* Pods_CoreDataLectureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B312A3237358A300C6EE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22460CD040D73ADBF281C25E /* Pods_CoreDataLectureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9B31277237358A100C6EE4A = {
+			isa = PBXGroup;
+			children = (
+				B9B31282237358A100C6EE4A /* CoreDataLecture */,
+				B9B3129E237358A300C6EE4A /* CoreDataLectureTests */,
+				B9B312A9237358A300C6EE4A /* CoreDataLectureUITests */,
+				B9B31281237358A100C6EE4A /* Products */,
+				E14ED821F641B22ABBCDC9F5 /* Pods */,
+				E405BB528C0DEA43686F1E2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9B31281237358A100C6EE4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B31280237358A100C6EE4A /* CoreDataLecture.app */,
+				B9B3129B237358A300C6EE4A /* CoreDataLectureTests.xctest */,
+				B9B312A6237358A300C6EE4A /* CoreDataLectureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9B31282237358A100C6EE4A /* CoreDataLecture */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312EA2373701100C6EE4A /* Common */,
+				B9B312BC2373637500C6EE4A /* Add Employee */,
+				B9B312CF237363E300C6EE4A /* Edit Employee */,
+				B9B312B82373633500C6EE4A /* Employee List */,
+				B9B31283237358A100C6EE4A /* AppDelegate.h */,
+				B9B31284237358A100C6EE4A /* AppDelegate.m */,
+				B9B31295237358A300C6EE4A /* main.m */,
+				B9B31294237358A300C6EE4A /* Info.plist */,
+				B9B3128F237358A300C6EE4A /* Assets.xcassets */,
+				B9B3128C237358A100C6EE4A /* CoreDataLecture.xcdatamodeld */,
+				B9B31291237358A300C6EE4A /* LaunchScreen.storyboard */,
+				B9B31289237358A100C6EE4A /* Main.storyboard */,
+			);
+			path = CoreDataLecture;
+			sourceTree = "<group>";
+		};
+		B9B3129E237358A300C6EE4A /* CoreDataLectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B3129F237358A300C6EE4A /* CoreDataLectureTests.m */,
+				B9B312A1237358A300C6EE4A /* Info.plist */,
+			);
+			path = CoreDataLectureTests;
+			sourceTree = "<group>";
+		};
+		B9B312A9237358A300C6EE4A /* CoreDataLectureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312AA237358A300C6EE4A /* CoreDataLectureUITests.m */,
+				B9B312AC237358A300C6EE4A /* Info.plist */,
+			);
+			path = CoreDataLectureUITests;
+			sourceTree = "<group>";
+		};
+		B9B312B82373633500C6EE4A /* Employee List */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312BB2373636C00C6EE4A /* Models */,
+				B9B312BA2373636100C6EE4A /* Views */,
+				B9B312B92373634C00C6EE4A /* Controllers */,
+			);
+			path = "Employee List";
+			sourceTree = "<group>";
+		};
+		B9B312B92373634C00C6EE4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312DC2373648F00C6EE4A /* EmployeeListViewController.h */,
+				B9B312DD2373648F00C6EE4A /* EmployeeListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9B312BA2373636100C6EE4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312E423736A9800C6EE4A /* Cells */,
+				B9B312DF2373652E00C6EE4A /* EmployeeListView.h */,
+				B9B312E02373652E00C6EE4A /* EmployeeListView.m */,
+				B9B312E22373654100C6EE4A /* EmployeeListView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9B312BB2373636C00C6EE4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9B312BC2373637500C6EE4A /* Add Employee */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312CD237363D800C6EE4A /* Models */,
+				B9B312CE237363D800C6EE4A /* Views */,
+				B9B312CC237363D800C6EE4A /* Controllers */,
+			);
+			path = "Add Employee";
+			sourceTree = "<group>";
+		};
+		B9B312CC237363D800C6EE4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312D62373646100C6EE4A /* AddEmployeeViewController.h */,
+				B9B312D72373646100C6EE4A /* AddEmployeeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9B312CD237363D800C6EE4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9B312CE237363D800C6EE4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9B312CF237363E300C6EE4A /* Edit Employee */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312D1237363FC00C6EE4A /* Models */,
+				B9B312D2237363FC00C6EE4A /* Views */,
+				B9B312D0237363FC00C6EE4A /* Controllers */,
+			);
+			path = "Edit Employee";
+			sourceTree = "<group>";
+		};
+		B9B312D0237363FC00C6EE4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312D92373646A00C6EE4A /* EditEmployeeViewController.h */,
+				B9B312DA2373646A00C6EE4A /* EditEmployeeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B9B312D1237363FC00C6EE4A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B9B312D2237363FC00C6EE4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9B312E423736A9800C6EE4A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312E523736AB000C6EE4A /* EmployeeTableViewCell.h */,
+				B9B312E623736AB000C6EE4A /* EmployeeTableViewCell.m */,
+				B9B312E823736ABC00C6EE4A /* EmployeeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B9B312EA2373701100C6EE4A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDA02A2373798500BFFA8C /* Models */,
+				B9B312EB2373702300C6EE4A /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B9B312EB2373702300C6EE4A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9B312EC2373704B00C6EE4A /* EmployeeFormView.h */,
+				B9B312ED2373704B00C6EE4A /* EmployeeFormView.m */,
+				B9B312EF2373705600C6EE4A /* EmployeeFormView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9BDA02A2373798500BFFA8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9BDA02B23737DD500BFFA8C /* Employee.h */,
+				B9BDA02C23737DD500BFFA8C /* Employee.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E14ED821F641B22ABBCDC9F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45CF084E25D71B705F701DDF /* Pods-CoreDataLecture.debug.xcconfig */,
+				EB6381566CB417256BF75B7B /* Pods-CoreDataLecture.release.xcconfig */,
+				D66F5B119584350C3601BDFC /* Pods-CoreDataLectureTests.debug.xcconfig */,
+				B4E1D38ECD529334787F70DE /* Pods-CoreDataLectureTests.release.xcconfig */,
+				F3912150F0FFA0DD06EA7A3E /* Pods-CoreDataLectureUITests.debug.xcconfig */,
+				EBFAD5A99BC142F0254E0165 /* Pods-CoreDataLectureUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E405BB528C0DEA43686F1E2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD8DABF09F452CF689D051BF /* Pods_CoreDataLecture.framework */,
+				3C2ED4E564E2A8C1BB08A342 /* Pods_CoreDataLectureTests.framework */,
+				7829353A60AA7C3D4CEDB5C9 /* Pods_CoreDataLectureUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9B3127F237358A100C6EE4A /* CoreDataLecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B312AF237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLecture" */;
+			buildPhases = (
+				44CB7149537E27C29690D025 /* [CP] Check Pods Manifest.lock */,
+				B9B3127C237358A100C6EE4A /* Sources */,
+				B9B3127D237358A100C6EE4A /* Frameworks */,
+				B9B3127E237358A100C6EE4A /* Resources */,
+				A26045E9E096CFFE155F9094 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataLecture;
+			productName = CoreDataLecture;
+			productReference = B9B31280237358A100C6EE4A /* CoreDataLecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9B3129A237358A300C6EE4A /* CoreDataLectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B312B2237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLectureTests" */;
+			buildPhases = (
+				D9B31BAFDD310C8B6A806A0A /* [CP] Check Pods Manifest.lock */,
+				B9B31297237358A300C6EE4A /* Sources */,
+				B9B31298237358A300C6EE4A /* Frameworks */,
+				B9B31299237358A300C6EE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B3129D237358A300C6EE4A /* PBXTargetDependency */,
+			);
+			name = CoreDataLectureTests;
+			productName = CoreDataLectureTests;
+			productReference = B9B3129B237358A300C6EE4A /* CoreDataLectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9B312A5237358A300C6EE4A /* CoreDataLectureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B312B5237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLectureUITests" */;
+			buildPhases = (
+				2FECC7E7512A26F9F97BF510 /* [CP] Check Pods Manifest.lock */,
+				B9B312A2237358A300C6EE4A /* Sources */,
+				B9B312A3237358A300C6EE4A /* Frameworks */,
+				B9B312A4237358A300C6EE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B312A8237358A300C6EE4A /* PBXTargetDependency */,
+			);
+			name = CoreDataLectureUITests;
+			productName = CoreDataLectureUITests;
+			productReference = B9B312A6237358A300C6EE4A /* CoreDataLectureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9B31278237358A100C6EE4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Earth Maniebo";
+				TargetAttributes = {
+					B9B3127F237358A100C6EE4A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B9B3129A237358A300C6EE4A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B9B3127F237358A100C6EE4A;
+					};
+					B9B312A5237358A300C6EE4A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B9B3127F237358A100C6EE4A;
+					};
+				};
+			};
+			buildConfigurationList = B9B3127B237358A100C6EE4A /* Build configuration list for PBXProject "CoreDataLecture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9B31277237358A100C6EE4A;
+			productRefGroup = B9B31281237358A100C6EE4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9B3127F237358A100C6EE4A /* CoreDataLecture */,
+				B9B3129A237358A300C6EE4A /* CoreDataLectureTests */,
+				B9B312A5237358A300C6EE4A /* CoreDataLectureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B3127E237358A100C6EE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B312E32373654100C6EE4A /* EmployeeListView.xib in Resources */,
+				B9B312E923736ABC00C6EE4A /* EmployeeTableViewCell.xib in Resources */,
+				B9B31293237358A300C6EE4A /* LaunchScreen.storyboard in Resources */,
+				B9B31290237358A300C6EE4A /* Assets.xcassets in Resources */,
+				B9B312F02373705600C6EE4A /* EmployeeFormView.xib in Resources */,
+				B9B3128B237358A100C6EE4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B31299237358A300C6EE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B312A4237358A300C6EE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FECC7E7512A26F9F97BF510 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataLectureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44CB7149537E27C29690D025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataLecture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A26045E9E096CFFE155F9094 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataLecture/Pods-CoreDataLecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataLecture/Pods-CoreDataLecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreDataLecture/Pods-CoreDataLecture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B31BAFDD310C8B6A806A0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataLectureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9B3127C237358A100C6EE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B312DE2373648F00C6EE4A /* EmployeeListViewController.m in Sources */,
+				B9B312EE2373704B00C6EE4A /* EmployeeFormView.m in Sources */,
+				B9B3128E237358A100C6EE4A /* CoreDataLecture.xcdatamodeld in Sources */,
+				B9B312DB2373646A00C6EE4A /* EditEmployeeViewController.m in Sources */,
+				B9B31296237358A300C6EE4A /* main.m in Sources */,
+				B9BDA02D23737DD500BFFA8C /* Employee.m in Sources */,
+				B9B312D82373646100C6EE4A /* AddEmployeeViewController.m in Sources */,
+				B9B312E723736AB000C6EE4A /* EmployeeTableViewCell.m in Sources */,
+				B9B312E12373652E00C6EE4A /* EmployeeListView.m in Sources */,
+				B9B31285237358A100C6EE4A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B31297237358A300C6EE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B312A0237358A300C6EE4A /* CoreDataLectureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B312A2237358A300C6EE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B312AB237358A300C6EE4A /* CoreDataLectureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9B3129D237358A300C6EE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B3127F237358A100C6EE4A /* CoreDataLecture */;
+			targetProxy = B9B3129C237358A300C6EE4A /* PBXContainerItemProxy */;
+		};
+		B9B312A8237358A300C6EE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B3127F237358A100C6EE4A /* CoreDataLecture */;
+			targetProxy = B9B312A7237358A300C6EE4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9B31289237358A100C6EE4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B3128A237358A100C6EE4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9B31291237358A300C6EE4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B31292237358A300C6EE4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9B312AD237358A300C6EE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9B312AE237358A300C6EE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9B312B0237358A300C6EE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CF084E25D71B705F701DDF /* Pods-CoreDataLecture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9B312B1237358A300C6EE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB6381566CB417256BF75B7B /* Pods-CoreDataLecture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLecture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9B312B3237358A300C6EE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D66F5B119584350C3601BDFC /* Pods-CoreDataLectureTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLectureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataLecture.app/CoreDataLecture";
+			};
+			name = Debug;
+		};
+		B9B312B4237358A300C6EE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4E1D38ECD529334787F70DE /* Pods-CoreDataLectureTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLectureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataLecture.app/CoreDataLecture";
+			};
+			name = Release;
+		};
+		B9B312B6237358A300C6EE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3912150F0FFA0DD06EA7A3E /* Pods-CoreDataLectureUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreDataLecture;
+			};
+			name = Debug;
+		};
+		B9B312B7237358A300C6EE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFAD5A99BC142F0254E0165 /* Pods-CoreDataLectureUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85ZHA47WTJ;
+				INFOPLIST_FILE = CoreDataLectureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.earthmaniebo.CoreDataLectureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoreDataLecture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9B3127B237358A100C6EE4A /* Build configuration list for PBXProject "CoreDataLecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B312AD237358A300C6EE4A /* Debug */,
+				B9B312AE237358A300C6EE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B312AF237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B312B0237358A300C6EE4A /* Debug */,
+				B9B312B1237358A300C6EE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B312B2237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B312B3237358A300C6EE4A /* Debug */,
+				B9B312B4237358A300C6EE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B312B5237358A300C6EE4A /* Build configuration list for PBXNativeTarget "CoreDataLectureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B312B6237358A300C6EE4A /* Debug */,
+				B9B312B7237358A300C6EE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9B3128C237358A100C6EE4A /* CoreDataLecture.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9B3128D237358A100C6EE4A /* CoreDataLecture.xcdatamodel */,
+			);
+			currentVersion = B9B3128D237358A100C6EE4A /* CoreDataLecture.xcdatamodel */;
+			path = CoreDataLecture.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9B31278237358A100C6EE4A /* Project object */;
+}
