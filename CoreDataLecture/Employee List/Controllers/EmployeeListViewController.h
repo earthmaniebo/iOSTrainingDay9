@@ -10,14 +10,17 @@
 #import "../Views/EmployeeListView.h"
 #import "../Views/Cells/EmployeeTableViewCell.h"
 #import "../../Add Employee/Controllers/AddEmployeeViewController.h"
+#import "../../Edit Employee/Controllers/EditEmployeeViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface EmployeeListViewController : UIViewController<EmployeeListViewDelegate, UITableViewDelegate, UITableViewDataSource, AddEmployeeViewControllerDelegate>
+@interface EmployeeListViewController : UIViewController<EmployeeListViewDelegate, UITableViewDelegate, UITableViewDataSource, AddEmployeeViewControllerDelegate, EditEmployeeViewControllerDelegate>
 
 @property (strong, nonatomic) EmployeeListView *employeeListView;
 @property (copy, readwrite) NSMutableArray *employees;
+@property (copy) NSString *idNumber;
 - (void)loadCoreDataValues;
+@property (strong) NSManagedObject *employee;
 
 @end
 

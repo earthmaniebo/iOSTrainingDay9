@@ -68,9 +68,13 @@
     if ([segue.identifier isEqualToString:@"addSegue"]) {
         AddEmployeeViewController *vc = [segue destinationViewController];
         vc.addEmployeeViewControllerDelegate = self;
+    } else if ([segue.identifier isEqualToString:@"editSegue"]) {
+        EditEmployeeViewController *vc = [segue destinationViewController];
+        vc.idNumber = _idNumber;
+        vc.employee = self.employee;
+        vc.editEmployeeViewControllerDelegate = self;
     }
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.employees count];
@@ -83,14 +87,15 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return true;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSManagedObject *employee = [self.employees objectAtIndex:indexPath.row];
+    self.employee = employee;
     [self performSegueWithIdentifier:@"editSegue" sender:self];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return true;
+}
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     NSManagedObjectContext *context = [self managedObjectContext];
@@ -104,12 +109,18 @@
             NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
             return;
         }
-        [self.employees removeObjectAtIndex:indexPath];
+        NSMutableArray *tempMArray = [NSMutableArray arrayWithArray:self.employees];
+        [tempMArray removeObjectAtIndex:indexPath.row];
+        self.employees = tempMArray;
         [self.employeeListView.employeeTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 
 - (void)didTapSave {
+    [self loadCoreDataValues];
+}
+
+-(void)didTapUpdate {
     [self loadCoreDataValues];
 }
 

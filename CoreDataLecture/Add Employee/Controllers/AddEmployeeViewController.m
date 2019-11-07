@@ -36,14 +36,11 @@
 }
 
 - (void)didTapAction {
-    
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSManagedObjectContext *context = [self managedObjectContext];
     NSManagedObject *employee;
     employee = [NSEntityDescription
                   insertNewObjectForEntityForName:@"Employee"
-                  inManagedObjectContext:[appDelegate managedObjectContext]];
+                  inManagedObjectContext:context];
     [employee setValue: self.employeeFormView.firstNameTextField.text forKey:@"firstName"];
     [employee setValue: self.employeeFormView.lastNameTextField.text forKey:@"lastName"];
     [employee setValue: self.employeeFormView.emailTextField.text forKey:@"email"];
@@ -52,16 +49,13 @@
     [employee setValue: salaryInDecimal forKey:@"salary"];
     [employee setValue: @1 forKey:@"isActive"];
     
-    
     NSError *error;
     [context save:&error];
-
     
     // Save the object to persistent store
     if (![context save:&error]) {
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
     }
-    
     [self.navigationController popViewControllerAnimated:true];
     [self.addEmployeeViewControllerDelegate didTapSave];
 }
